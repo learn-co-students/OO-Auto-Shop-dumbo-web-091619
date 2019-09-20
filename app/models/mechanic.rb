@@ -26,5 +26,11 @@ class Mechanic
     end
   end
 
+  def car_owners_names
+    car_owners.map do |owner|
+      owner.name
+    end
+  end
+
 
 end
