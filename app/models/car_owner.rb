@@ -24,7 +24,7 @@ class CarOwner
   end
 
   def self.average_amount
-    self.car_amount_per_owner.reduce(0) {|sum, car_num| (sum + car_num) / car_num}  
+    self.car_amount_per_owner.reduce(0) {|sum, car_num| (sum + car_num) } / car_num
   end
 
 
