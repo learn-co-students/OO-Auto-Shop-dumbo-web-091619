@@ -19,12 +19,12 @@ class CarOwner
     self.cars.map {|car| car.mechanic}
   end
 
-  def self.car_amount_per_owner
-    CarOwner.all.map {|owner| owner.cars.size}
-  end
+  # def self.car_amount_per_owner
+  #   CarOwner.all.map {|owner| owner.cars.s}
+  # end
 
   def self.average_amount
-    self.car_amount_per_owner.reduce(0) {|sum, car_num| (sum + car_num) } / car_num
+    Car.all.size.to_f / CarOwner.all.size.to_f
   end
 
 
