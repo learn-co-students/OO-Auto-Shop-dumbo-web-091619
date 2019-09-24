@@ -1,6 +1,6 @@
 class Car
 
-  attr_reader :make, :model, :classification
+  attr_reader :make, :model
   attr_accessor :owner, :mechanic
 
   @@all = []
