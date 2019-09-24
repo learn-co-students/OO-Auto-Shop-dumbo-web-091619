@@ -19,9 +19,9 @@ class CarOwner
     self.cars.map {|car| car.mechanic}
   end
 
-  # def self.car_amount_per_owner
-  #   CarOwner.all.map {|owner| owner.cars.s}
-  # end
+  def add_new_car(make, model, classification,mechanic)
+    Car.new(make,model, classification, self, mechanic)
+  end
 
   def self.average_amount
     Car.all.size.to_f / CarOwner.all.size.to_f
